@@ -1,15 +1,10 @@
-========== nvm install guide ==========
+# Installer NVM #
 
-curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash
+Installer NVM grâce a cURL:
 
-nvm install 0.12
-
-
-===> si plusieurs versions de node installées avec nvm
-
-nvm use
+`curl https://raw.githubusercontent.com/creationix/nvm/v0.25.0/install.sh | bash`
 
 
-nvm ls
+Installer la dernière version de Nodejs:
 
-nvm ls-remote
+`nvm install 0.12`
