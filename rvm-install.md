@@ -12,11 +12,12 @@ Taper la commande:
 
 `ruby -v`
 
-La console retourne `Le programme "Ruby" peut etre trouvé dans les paquets suivants: ...`, aucune version de Ruby n'est donc présente sur l'ordinateur. Vous pouvez donc directement passer à l'installation de RVM.
+La console retourne `Le programme "Ruby" peut être trouvé dans les paquets suivants: ...`, aucune version de Ruby n'est donc présente sur l'ordinateur. 
+
+Passer donc à l'installation de RVM
 
 
-La console retourne `ruby X.X.XpXXXX (2015-02-26 revision 49769) [x86_64-linux]`, Ruby est déjà installé sur votre ordinateur. Il faut le désinstaller avant de pouvoir installer RVM (voir partie Désinstaller Ruby).
-
+Si la console retourne `ruby X.X.XpXXXX (2015-02-26 revision 49769) [x86_64-linux]`, alors Ruby est déjà installé sur votre ordinateur. Il faut donc le désinstaller avant de pouvoir installer RVM (si vous n'avez pas de ruby d'installé alors passez à la section installer RVM).
 
 
 ### Désinstaller Ruby ###
@@ -51,7 +52,7 @@ Reactualiser les scripts du shell:
 `source ~/.rvm/scripts/rvm`
 
 
-**Une fois toute ces étapes terminées il faut relancer la console et la fermant et en ouvrant une nouvelle**
+**Une fois toute ces étapes terminées, il faut relancer la console : fermer puis en rouvrir une nouvelle**
 
 
 Vérifier que Ruby est bien trouvé par la console: 
@@ -59,17 +60,15 @@ Vérifier que Ruby est bien trouvé par la console:
 `type rvm | head -1`
 
 
-si la console retourne `rvm is a function` félicitation, rvm est correctement installé sur l'ordinateur.
+si la console retourne `rvm is a function` 
+félicitation !! rvm est correctement installé sur l'ordinateur.
 
 
 si la console retourne un chemin vers un dossier:
 
 1. Faire clic droit sur la console
-
 2. Profil > Préférences ou Préférences onglet Profil (terminator)
-
 3. Onglet Commande
-
 4. Cocher "Lancer la console en tant que shell de connexion" (Run command as login shell)
 
 
