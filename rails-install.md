@@ -1,13 +1,17 @@
-========== aide pour rails install ==========
+# Installer Rails #
 
-gem install rails
+**Pour installer Rails sur l'ordinateur, vous devez d'abord avoir installer RVM sur l'ordinateur! Si ce n'est pas fait, allez voir rvm-install.md**
 
-bundle install
+Installer RubyOnRails et ses dépendances grâce aux Gems Ruby:
 
-====> error gem pg <====
+`gem install rails`
 
-sudo apt-get install libpq-dev
 
-gem install pg -v '0.18.1'
+Installer la librairie libpq-dev:
 
-bundle install
+`sudo apt-get install libpq-dev`
+
+
+Installer PostGres grâce aux Gems Ruby:
+
+`gem install pg -v '0.18.1'`
