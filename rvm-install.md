@@ -46,7 +46,7 @@ Télécharger RVM, et installer Ruby:
 
 `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
 
-
+	
 Reactualiser les scripts du shell:
 
 `source ~/.rvm/scripts/rvm`
@@ -55,7 +55,7 @@ Reactualiser les scripts du shell:
 **Une fois toute ces étapes terminées, il faut relancer la console : fermer puis en rouvrir une nouvelle**
 
 
-Vérifier que Ruby est bien trouvé par la console: 
+Vérifier que Ruby 	est bien trouvé par la console: 
 
 `type rvm | head -1`
 
