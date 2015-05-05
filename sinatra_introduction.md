@@ -134,6 +134,8 @@ end
 ```
 
 Attention sans écrire le .erb à la fin de la ligne, juste le nom du fichier
+Il faut aussi stocker les fichiers html dans un repertoire views qui doit se trouver sans le même dossier que le fichier simple.rb.
+Pour le css il faut créer un répertoire public qui lui aussi doit être stocker dans le même dossier que le fichier simple.rb. Déposer dans le dossier public vôtre fichier css ainsi que les dossiers contenant vos fonts et vos images.
 
 ### Faire un formulaire 
 
