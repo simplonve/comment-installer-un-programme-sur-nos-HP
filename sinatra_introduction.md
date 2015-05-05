@@ -24,7 +24,7 @@ Sinatra est désormais installé sur votre OS.
 Ruby va pouvoir appeler votre librairie sinatra
 
 ### Installer shotgun
-Shotgun est un autre librarie ruby qui permet de ne pas relancer son serveur local à chaque fois qu'on enregistre son fichier dans son éditeur de texte (insérer lien Github sur shotgun)
+Shotgun est un autre librarie ruby qui permet de ne pas relancer son serveur local à chaque fois qu'on enregistre son fichier dans son éditeur de texte (https://github.com/rtomayko/shotgun)
 
 Dans le terminal:
 
@@ -81,7 +81,7 @@ Les requetes HTTP sont au nombre de 4 :
  - PUT
  - DELETE
 
-(Insérer une ressource sur les requetes HTTP)
+(http://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol  http://www.commentcamarche.net/contents/520-le-protocole-http#requete-http)
 
 #### Donc en ruby
 
