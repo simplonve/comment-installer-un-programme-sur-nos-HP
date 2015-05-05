@@ -11,7 +11,7 @@ Dans le terminal
 rvm -v
 ruby -v
 ```
-Sinon référez-vous aux tutoriels 'Installer RVM' (insérer lien)
+Sinon référez-vous aux tutoriels 'Installer RVM' (https://github.com/simplonve/comment-installer-un-programme-sur-nos-HP)
 
 ### Installer Sinatra
 Installer une librairie (appelé gem en ruby)
