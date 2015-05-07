@@ -18,6 +18,7 @@ Installer une librairie (appelé gem en ruby)
 
 ```
 sudo gem install sinatra
+(sous Ubuntu ne pas mettre le sudo devant)
 ```
 
 Sinatra est désormais installé sur votre OS. 
@@ -30,6 +31,7 @@ Dans le terminal:
 
 ```
 sudo gem install shotgun
+(sous Ubuntu ne pas mettre le sudo devant)
 ```
 
 ### Créer son fichier ruby 
