@@ -176,5 +176,9 @@ post '/' do
 end
 ```
 
+Remarquez la première ligne est une requete POST, qui permet d'envoyer de l'information vers le serveur. Ce post doit contenir des variables, des éléments à stoker dans la base de données (ici first name et last name). Ces éléments **viennent** du formulaire HTML, sont stokés temporairement dans une variable **@name** pour pouvoir plus tard etre inscrite dans la base de données.
+La ligne qui définit la variable ``@name`` est peut-etre la plus importante de la formation à l'heure actuelle. Elle permet de stocker les paramètres ('params') dans le serveur.
+Dans un serveur Ruby la variable params est toujours définit, meme si elle ne passe aucun params elle est là. Vous pouvez donc toujours appeler cette variable quand vous etes dans une requete GET ou POST ou PATCH ou DELETE
 
-Référence : vidéo de Peepcode sur Sinatra
+
+Référence : vidéo de Peepcode sur Sinatra | partie "simple"
