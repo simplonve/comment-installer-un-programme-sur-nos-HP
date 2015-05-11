@@ -41,7 +41,7 @@
 ```wget --no-check-certificate http://install.ohmyz.sh -O - | sh```
 
 
-###Installer le plugin syntax-highlighting 
+##Installer le plugin syntax-highlighting 
 
 ```cd ~/.oh-my-zsh/custom/plugins```
 ```git clone git://github.com/zsh-users/zsh-syntax-highlighting.git```
