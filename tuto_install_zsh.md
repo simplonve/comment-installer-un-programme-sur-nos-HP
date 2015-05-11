@@ -27,29 +27,28 @@
 
 ####Verifiez l'install :
 
-```zsh```
+`zsh`
 
 -puis `ps`
 -(Si vous avez un long message tapez 0 pour créer le .zshrc, sinon `exit` pour resortir)
 
 ####Changer le shell par défaut
 
-```chsh -s /bin/zsh```
+`chsh -s /bin/zsh`
 
 ###Installer oh-my zsh
 
-```wget --no-check-certificate http://install.ohmyz.sh -O - | sh```
+`wget --no-check-certificate http://install.ohmyz.sh -O - | sh`
 
 
 ##Installer le plugin syntax-highlighting 
 
-```cd ~/.oh-my-zsh/custom/plugins```
-```git clone git://github.com/zsh-users/zsh-syntax-highlighting.git```
+`cd ~/.oh-my-zsh/custom/plugins`
+`git clone git://github.com/zsh-users/zsh-syntax-highlighting.git`
 
 ####Activer le plugin dans ~/.zshrc (en dernière position)
 
-```plugins=(zsh-syntax-highlighting)```
-
+`plugins=(zsh-syntax-highlighting`
 ####Recharger ~/.zshrc
 
 `source ~/.zshrc`
