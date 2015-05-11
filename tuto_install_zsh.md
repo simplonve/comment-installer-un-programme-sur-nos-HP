@@ -30,6 +30,7 @@
 `zsh`
 
 -puis `ps`
+
 -(Si vous avez un long message tapez 0 pour créer le .zshrc, sinon `exit` pour resortir)
 
 ####Changer le shell par défaut
@@ -44,11 +45,13 @@
 ##Installer le plugin syntax-highlighting 
 
 `cd ~/.oh-my-zsh/custom/plugins`
+
 `git clone git://github.com/zsh-users/zsh-syntax-highlighting.git`
 
 ####Activer le plugin dans ~/.zshrc (en dernière position)
 
 `plugins=(zsh-syntax-highlighting`
+
 ####Recharger ~/.zshrc
 
 `source ~/.zshrc`
@@ -61,5 +64,5 @@
 
 -remplacer `export PATH="/home/nom/rvm...` par `export PATH="$PATH:$HOME/rvm....`
 
--Et voilà, si tout c'est bien passé, vous avez des couleurs dans votre ``Terminal``
+-Et voilà, si tout c'est bien passé, vous avez des couleurs dans votre `Terminal`
 
