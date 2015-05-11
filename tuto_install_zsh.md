@@ -1,4 +1,4 @@
-###Installer oh-my-zsh sur Ubuntu
+##Installer oh-my-zsh sur Ubuntu
 
 - Programme pour mettre de la couleur dans le Terminal et différents plugins
 
@@ -20,7 +20,7 @@
 
 ```sudo shutdown -r 0```
 
-#Installer zsh sur Linux Mint
+##Installer zsh sur Linux Mint
 
 ```sudo apt-get update```
 ```sudo apt-get install git-core zsh```
@@ -56,7 +56,7 @@
 
 `source ~/.zshrc`
 
-####Pour Linux Mint
+###Pour Linux Mint
 
 - Même procédure puis:
 
