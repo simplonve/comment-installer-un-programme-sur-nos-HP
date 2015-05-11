@@ -1,6 +1,6 @@
 ###Installer oh-my-zsh sur Ubuntu
 
--Programme pour mettre de la couleur dans le Terminal et différents plugins
+- Programme pour mettre de la couleur dans le Terminal et différents plugins
 
 #### Prérequis : 
 
@@ -29,9 +29,9 @@
 
 `zsh`
 
--puis `ps`
+- Puis `ps`
 
--(Si vous avez un long message tapez 0 pour créer le .zshrc, sinon `exit` pour resortir)
+- (Si vous avez un long message tapez 0 pour créer le .zshrc, sinon `exit` pour resortir)
 
 ####Changer le shell par défaut
 
@@ -58,11 +58,11 @@
 
 ####Pour Linux Mint
 
--Même procédure puis:
+- Même procédure puis:
 
 ####Editer le .zshrc:
 
--remplacer `export PATH="/home/nom/rvm...` par `export PATH="$PATH:$HOME/rvm....`
+- Remplacer `export PATH="/home/nom/rvm...` par `export PATH="$PATH:$HOME/rvm....`
 
--Et voilà, si tout c'est bien passé, vous avez des couleurs dans votre `Terminal`
+- Et voilà, si tout c'est bien passé, vous avez des couleurs dans votre `Terminal`
 
