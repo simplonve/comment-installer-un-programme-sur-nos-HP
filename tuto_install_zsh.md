@@ -50,7 +50,7 @@
 
 ####Activer le plugin dans ~/.zshrc (en dernière position)
 
-`plugins=(zsh-syntax-highlighting`
+`plugins=(zsh-syntax-highlighting)`
 
 ####Recharger ~/.zshrc
 
