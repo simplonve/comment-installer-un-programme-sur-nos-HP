@@ -31,7 +31,7 @@
 
 - Puis `ps`
 
-- (Si vous avez un long message tapez 0 pour créer le .zshrc, sinon `exit` pour resortir)
+- (Si vous avez un long message tapez 0 pour créer le .zshrc, sinon `exit` pour sortir)
 
 ####Changer le shell par défaut
 
