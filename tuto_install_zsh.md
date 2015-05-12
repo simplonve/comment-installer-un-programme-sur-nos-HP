@@ -66,3 +66,9 @@
 
 - Et voilà, si tout c'est bien passé, vous avez des couleurs dans votre `Terminal`
 
+####Faire marcher RVM sous Arch/Manjaro
+Après avoir installé ZSH, lorsque vous lancez `ruby -v`, un message d'erreur peut s'afficher `RVM is not a function`.
+
+Dans ce cas ajoutez, à votre `~/zshrc`
+
+`source $HOME/.rvm/scripts/rvm`
