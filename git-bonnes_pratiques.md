@@ -8,9 +8,9 @@ Par exemple, quand vous créez une application avec une base de donnée, le cont
 Vous pouvez demander à git d'ignorer certains fichiers en créant un fichier nommé `.gitignore` à la racine de votre repertoire (à côté du `.git` donc).
 Ce fichier contiendra ce type d'information :
 
-`# Ignorer tous les fichiers nommés text.txt
-text.txt
-# Ignorer tous les fichiers de type db
-*.db`
+`# Ignorer tous les fichiers nommés text.txt`
+`text.txt`
+`# Ignorer tous les fichiers de type db`
+`*.db`
 
 à présent, quand vous ferez votre GIT STATUS, vous ne verrez plus les fichiers appelés par `.gitignore`
