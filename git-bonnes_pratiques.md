@@ -9,7 +9,7 @@ Vous pouvez demander à git d'ignorer certains fichiers en créant un fichier no
 Ce fichier contiendra ce type d'information :
 
 `# Ignorer tous les fichiers nommés text.txt`
-`text.txt`
+`*text.txt`
 `# Ignorer tous les fichiers de type db`
 `*.db`
 
