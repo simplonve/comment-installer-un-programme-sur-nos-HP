@@ -1,68 +1,87 @@
-Arborescence projet sinatra
+# Arborescence projet sinatra
 				
-Fichier	config.ru	Lorsque sinatra se lance, il lit le fichier et se configure lui même
-					require './app'	Import de app.rb
-					run Sinatra::Application	Démarrer l'application Sinatra
+### Fichier config.ru	
+
+Lorsque sinatra se lance, il lit le fichier et se configure lui même
+
+#### Contenu
+
+Import de app.rb
+`require './app'`	
+Démarrer l'application Sinatra
+`run Sinatra::Application`
 				
-Fichier	Gemfile		Le fichier Gemfile sert à définir les bibliothèque nécessaires au fonctionnement de l'application
-					Pas d'extension	Gem : Librairies (package) de codes prêt à l'emploi
+### Fichier	Gemfile
+
+Le fichier Gemfile sert à définir les bibliothèque nécessaires au fonctionnement de l'application
+Pas besoin d'extension de Gem, les librairies (package) sont des bouts de codes prêt à l'emploi
 				
-						source 'https://rubygems.org'	Source pour télécharger le gems
-						ruby '2.2.1'	Version de ruby
-							
-						gem 'sinatra'	gems à télécharger pour l'application
-						gem 'activerecord'	
-						gem 'sinatra-activerecord'	
-						gem 'sqlite3'	
+#### Contenu du fichier
+
+`source 'https://rubygems.org'`	
+Source pour télécharger le gems
+`ruby '2.2.1'`	
+Version de ruby
+
+`gem 'sinatra'	gems à télécharger pour l'application`
+`gem 'activerecord'`
+`gem 'sinatra-activerecord'`
+`gem 'sqlite3'`
 				
-					Dans la console, après avoir réalisé les fichiers config.ru et Gemfile saisir la ligne de commande
-					« bundle install » (lancer la commande dans l'arborescence du Gemfile). Cette commande va installer
-					les gems indiqués dans le fichier Gemfile et génère le fichier Gemfile.lock
+Dans la console, après avoir réalisé les fichiers config.ru et Gemfile saisir la ligne de commande `bundle install` (lancer la commande depuis le dossier ou se trouve le fichier Gemfile). 
+Cette commande va installer les gems indiqués dans le fichier Gemfile et génère le fichier Gemfile.lock
 				
-Fichier	Gemfile.lock	Fichier généré automatiquement après avoir lancé la commande « bundle install »
+### Fichier	Gemfile.lock
+Fichier généré automatiquement après avoir lancé la commande « bundle install » qui affiche les dépendances détaillés de toute les bibliothèques/librairies/gems de l'application
 				
+
+### Fichier	Rakefile.rb
+Le fichier rakefile sert à faire le lien entre sql et rubis. Il est lu à chaque fois dès que tu lance le serveur. 
+Il est lu une seule fois au lancement.
 				
-Fichier	rakefile.rb		Le fichier rakefile sert à faire le lien entre sql et rubis. Il est lu à chaque fois dès 
-						que tu lance le serveur. 
-			Lu une seule fois au lancement.
-				
-			require './app'	Import de app.rb
-			require 'sinatra/activerecord/rake'	Import de la librairie rake activerecord pour sinatra
-				
-				
-Fichier	app.rb		Fichier contenant les requêtes http (get, post, etc.)
+`require './app'`
+Import de app.rb
+`require 'sinatra/activerecord/rake'`	
+Import de la librairie rake activerecord pour sinatra
+	
+### Fichier	app.rb
+Fichier contenant les requêtes http (get, post, etc.)
 					C'est dans ce fichier que l'on va récupérer et traiter les champs de saisi envoyé au navigateur par le biais du (des) fichier(s) 				index.erb		
 						
-					require 'sinatra'	Import de la librairie sinatra
-					require 'sinatra/activerecord'	Import de la librairie activerecord pour sinatra
-						
-					ActiveRecord::Base.establish_connection(	Connection à la base de donnée
-					:adapter => 'sqlite3',	Configurer la db pour sqlite3
-					:database => 'dev.db'	Nommer la db « dev.db »
-					)	
-						
-					ActiveRecord::Base.default_timezone= :local	Utilisation des dates et heures local pour la db
-						
-					class Article < ActiveRecord::Base	Création de la class article qui hérite des propriétés de base de ActiveRecord
-					end	
-						
-					get '/' do 	Faire lorsque l'on demande au serveur, que l'on accède à un url, à la racine du site
-					     @article = Article.order("created_at ASC")	Appel dans l'ordre croissant de la table Article et stockage dans la variable « article »
-					     @title = "Article" 	Affecte « Article » à la variable « title »
-					     erb :index	Appel et exécution de index.erb
-					end	
-						
-					post '/' do	Faire un envoi de donnée au serveur (formulaire) ou insertion d'une donnée
-					     @article = Article.new(params[:articles])	Création d'un nouvelle article avec les paramètres « articles » récupérer de index.erb
-					     @article.save	Enregistrement de l'article
-					     redirect '/'	Se rediriger à la racine
-					end	
-						
-					put '/' do	Modification d'une donnée dans la base
-					end	
-						
-					delete '/' do	Suppression d'une donnée dans la base
-					end	
+#### Contenu du fichier
+`require 'sinatra'`
+Import de la librairie sinatra
+`require 'sinatra/activerecord'`
+Import de la librairie activerecord pour sinatra
+
+	
+ActiveRecord::Base.establish_connection(	Connection à la base de donnée
+:adapter => 'sqlite3',	Configurer la db pour sqlite3
+:database => 'dev.db'	Nommer la db « dev.db »
+)	
+	
+ActiveRecord::Base.default_timezone= :local	Utilisation des dates et heures local pour la db
+	
+class Article < ActiveRecord::Base	Création de la class article qui hérite des propriétés de base de ActiveRecord
+end	
+	
+get '/' do 	Faire lorsque l'on demande au serveur, que l'on accède à un url, à la racine du site
+     @article = Article.order("created_at ASC")	Appel dans l'ordre croissant de la table Article et stockage dans la variable « article »
+     @title = "Article" 	Affecte « Article » à la variable « title »
+     erb :index	Appel et exécution de index.erb
+end	
+	
+post '/' do	Faire un envoi de donnée au serveur (formulaire) ou insertion d'une donnée
+     @article = Article.new(params[:articles])	Création d'un nouvelle article avec les paramètres « articles » récupérer de index.erb
+     @article.save	Enregistrement de l'article
+     redirect '/'	Se rediriger à la racine
+end	
+	
+put '/' do	Modification d'une donnée dans la base
+end	
+	
+delete '/' do	Suppression d'une donnée dans la base
+end	
 				
 				
 	Dans la console, après avoir réalisé les fichiers rakefile.rb et app.rb saisir la ligne de commande
