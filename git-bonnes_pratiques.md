@@ -1,16 +1,17 @@
 # Trouvez ici quelques bonnes pratiques sur GIT et GITHUB #
 
-**La commande GIT IGNORE**
+## Le fichier .gitignore
 
 Suivre (versionner) tous les fichiers d'un projet n'est pas forcément une bonne idée. 
-Par exemple, quand vous créez une application avec une base de donnée, le contenu de cette dernière n'est pas indispensable à suivre sur git (et peut vous créer des conflits ensuite quand vous pushez sur github).
+Par exemple, quand vous créez une application avec une base de donnée, le contenu de cette dernière n'est pas indispensable à suivre sur git (et vous ne souhaitez pas donner accès aux données de votre application en ligne).
 
-Vous pouvez demander à git d'ignorer certains fichiers en créant un fichier nommé `.gitignore` à la racine de votre repertoire (à côté du `.git` donc).
+Pour demander à git d'ignorer certains fichiers de version, un fichier nommé `.gitignore` à la racine de votre repertoire (à côté du dossier `.git`).
+
 Ce fichier contiendra ce type d'information :
 
 `# Ignorer tous les fichiers nommés text.txt`
 `*text.txt`
-`# Ignorer tous les fichiers de type db`
+`# Ignorer tous les fichiers de type .db`
 `*.db`
 
-à présent, quand vous ferez votre GIT STATUS, vous ne verrez plus les fichiers appelés par `.gitignore`
+Taper ensuite `git status` ; vous ne verrez plus les fichiers inscrit dans le par `.gitignore`
