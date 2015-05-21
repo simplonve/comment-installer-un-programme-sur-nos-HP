@@ -9,3 +9,7 @@ Installer NVM grâce a cURL
 Installer la dernière version de Nodejs
 
 `nvm install 0.12`
+
+Lancer nvm par defaut dans votre terminal (remplacer XX.XX par votre version pécédemment installée)
+
+`nvm alias default v0.XX.XX`
