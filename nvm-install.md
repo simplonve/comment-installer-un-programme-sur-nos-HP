@@ -1,3 +1,5 @@
+Node version manager, permet d'installer des version différentes de node sur une même machine.
+
 # Installer NVM #
 
 Installer NVM grâce a cURL
@@ -6,7 +8,7 @@ Installer NVM grâce a cURL
 
 **Redémarer le terminal**
 
-Installer la dernière version de Nodejs
+# Installer la dernière version de Nodejs par défaut
 
 `nvm install 0.12`
 
