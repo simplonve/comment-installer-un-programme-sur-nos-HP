@@ -4,10 +4,10 @@
 
 #### Prérequis : 
 
-```apt-get install zsh```
+```sudo apt-get install zsh```
 
 
-```apt-get install git-core```
+```sudo apt-get install git-core```
 	
 
 ####Installer oh-my-zsh
