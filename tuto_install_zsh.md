@@ -5,6 +5,8 @@
 #### Prérequis : 
 
 ```apt-get install zsh```
+
+
 ```apt-get install git-core```
 	
 
